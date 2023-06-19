@@ -76,4 +76,18 @@ new Swiper('.destination', {
    }
 });
 
-new WOW().init();
+
+
+// preloader
+
+
+
+window.onload = function() {
+   const preloader = document.getElementById('preloader');
+   preloader.style.display = 'none';
+
+   new WOW({
+      mobile: false,
+      offset: 200,
+   }).init();
+}
